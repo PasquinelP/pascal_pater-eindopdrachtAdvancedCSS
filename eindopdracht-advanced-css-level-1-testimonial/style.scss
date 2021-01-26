@@ -1,0 +1,69 @@
+@import "styles/constants";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bgPage;
+  font-family: $font;
+}
+
+.testimonial {
+  background-color: $bgBody;
+  border-radius: 20px;
+  margin: 12px 28px;
+  max-width: 448px;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+
+  &__body {
+    padding: 48px;
+    color: $tstBodyColor;
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 48px;
+  }
+
+  &__img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px $imgBorder solid;
+    position: absolute;
+    top: -70px;
+  }
+
+  &__footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $bgFooter;
+    height: 180px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  &__name {
+    color: $tstNameColor;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+
+  &__site {
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    color: $tstSiteColor;
+  }
+}

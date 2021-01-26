@@ -1,0 +1,51 @@
+.social-media {
+  position: fixed;
+  bottom: 60px;
+  right: 0;
+  width: 240px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transform: translateX(178px);
+    transition: transform 1s ease-in-out;
+
+    &:hover {
+      transform: translateX(0);
+      transition: transform 1s ease-in-out;
+    }
+
+    &--blog {
+      background-color: $bgIconBlog;
+    }
+
+    &--twitter {
+      background-color: $bgIconTwitter;
+    }
+
+    &--linkedin {
+      background-color: $bgIconLinkedin;
+    }
+
+    &--facebook {
+      background-color: $bgIconFacebook;
+    }
+
+    &--github {
+      background-color: $bgIconGithub;
+    }
+  }
+
+  &__icon {
+    margin-right: 20px;
+    width: 22px;
+    height: 22px;
+  }
+
+  &__text {
+    color: #fff;
+  }
+}

@@ -1,0 +1,44 @@
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    & img {
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+      width: 100%;
+      height: auto;
+    }
+
+    &:hover img {
+      opacity: 0;
+      transition: opacity 0.45s ease-in-out;
+    }
+
+    & button {
+      position: absolute;
+      display: none;
+    }
+
+    &:hover button {
+      display: inline-block;
+    }
+
+    & button:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .portfolio {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
+}

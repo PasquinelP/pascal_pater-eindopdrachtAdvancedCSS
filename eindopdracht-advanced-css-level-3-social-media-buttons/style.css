@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-color: #c3cfe2;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media {
+  position: fixed;
+  bottom: 60px;
+  right: 0;
+  width: 240px;
+}
+
+.social-media__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transform: translateX(178px);
+          transform: translateX(178px);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.social-media__item:hover {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.social-media__item--blog {
+  background-color: #e17b77;
+}
+
+.social-media__item--twitter {
+  background-color: #00aced;
+}
+
+.social-media__item--linkedin {
+  background-color: #007bb6;
+}
+
+.social-media__item--facebook {
+  background-color: #3b5998;
+}
+
+.social-media__item--github {
+  background-color: #333;
+}
+
+.social-media__icon {
+  margin-right: 20px;
+  width: 22px;
+  height: 22px;
+}
+
+.social-media__text {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

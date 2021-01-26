@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-color: $bgPage;
+  font-family: $font;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
